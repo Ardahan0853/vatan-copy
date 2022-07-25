@@ -19,9 +19,16 @@ import { Navigation } from "swiper";
 const Products = (props) => {
 
 
-
-   
-
+    const newArray=[]
+    props.bestSeller.slice(0,5).map(item=>{
+        newArray.push(item)
+    })
+    console.log(newArray)
+    const newArray2=[]
+    props.bestSeller.slice(5,10).map(item=>{
+        newArray2.push(item)
+    })
+    console.log(newArray2)
 
     const card = props.items.map((item) => {
         const handleClick = (e) => {
@@ -60,12 +67,12 @@ const Products = (props) => {
         )
     })
     
-    const card2 = props.bestSeller.splice(0, 5).map((item) => {
+    const card2 = newArray.map((item) => {
         const handleClick = (e) => {
-            if (item.attr1 === e.target.value) {
+             
                 props.cart(prevCart => prevCart + 1)
 
-            }
+            
         }
 
         const shipping = item.samedayshipping ? <div className="kargo-div"><h4 className="kargo">BUGÜN KARGODA</h4></div> : "";
@@ -96,12 +103,13 @@ const Products = (props) => {
             </Col>
         )
     })
-    const card3 = props.bestSeller.map((item) => {
+    
+    const card3 = newArray2.map((item) => {
         const handleClick = (e) => {
-            if (item.attr1 === e.target.value) {
+            
                 props.cart(prevCart => prevCart + 1)
 
-            }
+            
         }
 
         const shipping = item.samedayshipping ? <div className="kargo-div"><h4 className="kargo">BUGÜN KARGODA</h4></div> : "";

@@ -32,7 +32,7 @@ function Header(props) {
 
             </Nav>
             <form className='form-div'>
-              <input className="input" placeholder="Ürün ara"></input>
+              <input className="input" type="text" placeholder="&#xf002;Ürün ara" style={{ fontFamily:"Arial, FontAwesome"}}></input>
             </form>
             <Nav>
               <Nav.Link>Profil  <i className="fa-solid fa-user"></i></Nav.Link>
