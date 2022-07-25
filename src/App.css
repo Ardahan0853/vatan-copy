@@ -1,38 +1,305 @@
-.App {
-  text-align: center;
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mySwiper {
+    width: 90%;
+    height: 650px;
+    top: 100px;
+
+}
+.navbar-top{
+    background-color: rgba(24, 42, 162, 0.723) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.mySwiper {
+    text-align: center;
+    font-size: 18px;
+    background-color: rgba(24, 42, 162, 0.723);
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.Kategori {
+    margin-right: auto;
+}
+
+
+
+.navbar-top {
+    width: 90% !important ;
+    
+    padding: 0 5%;
+       
+}
+.navbar{
+    width: 100%;
+    padding: 0;
+    position: fixed;
+    z-index: 2;
+    justify-content: center;
+    height: 100px;
+}
+.vatan-logo {
+    width: 100%;
+}
+
+.navbar-brand {
+    width: 200px;
+}
+.title{
+    font-size: 10px;
+    text-align: center;
+    
+}
+.yellow{
+    color:orange
+}
+.text-align{
+    text-align: center;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    height: 500px;
+}
+.price{
+    color: blue;
+    
+    
+    margin-top: auto !important;
+    font-size: 30px;
+    
+    bottom: 20px;
+}
+.padding{
+    padding-top: 100px;
+}
+.price-div{
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    bottom:  10%;
+    right: 0;
+    
+}
+.kargo{
+    font-size: 13px;
+    color: black;
+    
+    background-color: rgba(237, 237, 237, 0.845);
+    margin-top: 3%;
+    
+    
+}
+.kargo-div{
+    height: 30px;
+    background-color: rgba(237, 237, 237, 0.845);
+    justify-content: center;
+    position: absolute;
+    bottom: 16%;
+    width:70%;
+    position: absolute;
+      
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    
+}
+.card{
+    height: 500px;
+    position: relative;
+    
+    
+}
+.img{
+    width: 80%;
+    margin: auto;
+}
+.button{
+    width: 100%;
+    border-radius: 0;
+    height: 50px;
+}
+.button:hover{
+    opacity: 0.6;
+    
+}
+.fa-cart-shopping{
+    margin-right:5px ;
+}
+
+.button-div{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin: auto;
+    right: 0;
+    
+}
+.swiper-button-next:after{
+    padding-right: 20vh;
+    color:white;
+    
+}
+
+.swiper-button-prev:after{
+    
+    color: white;
+    padding-left: 20vh;
+    
+} 
+.swiper-div{
+    height: 100vh;
+ 
+   background-color: black;
+}
+.mySwiper2>.swiper-slide{
+    color: white;
+}
+.mySwiper2>.swiper-button-prev:after{
+    color: rgb(54, 40, 40);
+    padding: 0;
+}
+.mySwiper2>.swiper-button-next:after{
+    color: rgb(54, 40, 40);
+    padding: 0;
+}
+.left{
+    position: absolute;
+    left: 0;
+    opacity: 0.5;
+}
+.right{
+    position: absolute;
+    right: 0;
+    opacity: 0.5;
+}
+.input{
+    width: 75vh;
+    background-color: blue;
+    opacity: 0.7;
+    height: 50px;
+    text-align: center;
+    border: 1px solid grey;
+
+}
+@media(max-width:1475px){
+    .third-image{
+        display: none;
+    }
+}
+@media(max-width:1080px){
+    .right{
+        display: none;
+    }
+    .second-image{
+        display: none;
+    }
+    .left{
+        display: none;
+    }
+}
+@media(max-width:730px){
+    .first-image{
+        width: 90%;
+        margin: auto;
+       
+    }
+    .mySwiper{
+        height: 100%;
+    }
+    .mySwiper>.swiper-button-next:after{
+        margin: 0;
+        padding: 0;
+    }
+    .mySwiper>.swiper-button-prev:after{
+        margin: 0;
+        padding: 0;
+    }
+}
+@media(max-width:1400px){
+    .first-container{
+        margin: 0;
+        width: 100%;
+        
+    }
+    
+    
+}
+@media(max-width:580px){
+    .card-body{
+        width: 100%;
+        margin: 0 !important;
+    }
+    .first-container{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: white;
+    
   }
+.font-size-footer>h4{
+    
+    color: black;
+    font-size: 16px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footer{
+    display: flex;
+    margin-top: 200px;
+    width: 100%;
 }
-
-.App-link {
-  color: #61dafb;
+h2{
+    margin: auto;
+    color: grey;
+    font-size: 12px;
+    margin-top: 10%;
+    
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-bottom{
+    margin-top: 100px;
+}
+.bkm-express{
+    width: 10%;
+}
+.master-card{
+    width: 15%;
+}
+.font-size-footer{
+    text-align: center;
+    margin: 6% 0;
+}
+.visa{
+    width: 10%;
+}
+.american-express{
+    width: 5%;
+    margin-left: 15px;
+}
+.norton{
+    width: 15%;
+    margin-left: 20px;
+}
+.Copy-right{
+    color: grey;
 }
