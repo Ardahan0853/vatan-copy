@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/vatan-copy/static/css/main.2b8bcca6.css",
+    "main.js": "/vatan-copy/static/js/main.a5bffaff.js",
+    "static/media/logo.png": "/vatan-copy/static/media/logo.0c8e9827892f95d6dce3.png",
+    "index.html": "/vatan-copy/index.html",
+    "main.2b8bcca6.css.map": "/vatan-copy/static/css/main.2b8bcca6.css.map",
+    "main.a5bffaff.js.map": "/vatan-copy/static/js/main.a5bffaff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b8bcca6.css",
+    "static/js/main.a5bffaff.js"
+  ]
+}
